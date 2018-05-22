@@ -1,0 +1,8 @@
+<ion-content class="card-background-page">
+  <ion-card *ngFor="let account of charactersAll">
+    <img (click)="loadCharacter(account.url)" src="assets/imgs/sw1.png" />
+    <div (click)="loadCharacter(account.url)" class="card-title">{{account.name}}</div>
+  </ion-card>
+  <button (click)="previousPage()" ion-button >Previous Page</button>
+  <button float-right  (click)="nextPage()" ion-button>Next Page</button>
+  </ion-content>
